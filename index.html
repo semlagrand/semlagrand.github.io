@@ -11,8 +11,10 @@
     <div class="header">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#renders">Renders</a>
-            <a href="#animations">Animations</a>
+            <a href="./">Home</a>
+            <a href="./renders">Renders</a>
+            <a href="./animaties">Animaties</a>
+            <a href="./modellen">Modellen</a>
             <a href="./about">About</a>
         </div>
           
@@ -50,7 +52,107 @@
         });
     </script>
 </head>
-<body>
 
+<body>
+    <div class="buttons">
+        <div class="button">
+            <a href="./renders">Renders</a>
+        </div>
+        <div class="button">
+            <a href="./animaties">Animaties</a>
+        </div>
+        <div class="button">
+            <a href="./modellen">Modellen</a>
+        </div>
+        <div class="button">
+            <a href="./about">About</a>
+        </div>
+    </div>
+
+    <h1 id="renders">Uitgelicht</h1>
+
+    <div class="page">
+        <div class="container">
+            <div class="image-container">
+                <img src="/renders/classroom.jpg" alt="">
+                <div class="overlay-text">
+                    <h1>Laatste Schooldag, 2023</h1>
+                    <h2>5 juli 2023</h2>
+                    <h2>Software: Blender</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="container">
+            <div class="image-container">
+                <img src="/renders/jj.jpg" alt="">
+                <div class="overlay-text">
+                    <h1>Juwelen van de Jungle, 2023</h1>
+                    <h2>8 november 2023</h2>
+                    <h2>Software: Blender</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="container">
+            <div class="image-container">
+                <video controls controlsList="nodownload" autoplay muted loop>
+                    <source src="/animaties/quadruped_walk.mp4" type="video/mp4">
+                </video>
+
+                <p> </p>
+                <h1>Quadruped Walk Cycle</h1>
+                <h2>Software: Maya</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="group">
+            <div class="card">
+                <img src="/renders/beetle-composite.jpg">
+            </div>
+            <div class="card">
+                <img src="/renders/beetle-composite-2.jpg">
+            </div>
+            <div class="card">
+                <img src="/renders/insurance-composite.jpg">
+            </div>
+            <div class="card">
+                <img src="/renders/last-flight-composite.jpg">
+            </div>
+
+            
+
+            <div class="card">
+                <img class="card-img" src="/renders/fish.jpg">
+            </div>
+            <div class="card">
+                <img class="card-img" src="/renders/city.jpg">
+            </div>
+            <div class="card">
+                <img class="card-img" src="/renders/forest-poster.jpg">
+            </div>
+            <div class="card">
+                <img class="card-img" src="/renders/school.jpg">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2024 Sem Lagrand. Alle rechten voorbehouden.
+        </div>
+        <div class="footer-content">
+            <div class="links">
+                <a class="email" href="mailto:semlagrand@gmail.com">semlagrand@gmail.com</a>
+                <a href="./about">About</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
