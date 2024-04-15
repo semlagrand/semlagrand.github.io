@@ -238,7 +238,6 @@ video:hover {
 }
 
 .button {
-    width: 20vw;
     padding: 10px 20px;
     margin: 1rem 1rem;
     align-items: center;
@@ -294,6 +293,10 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    .button {
+        width: 25vw;
+    }
+
     .model {
         max-width: 80vw;
     }
@@ -304,6 +307,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+    .button {
+        width: 10vw;
+    }
+
     .model {
         max-width: 30vw;
     }
