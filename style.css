@@ -234,12 +234,15 @@ video:hover {
 .buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .button {
+    width: 20vw;
     padding: 10px 20px;
-    margin: 5rem 1rem;
+    margin: 1rem 1rem;
     align-items: center;
+    text-align: center;
     background-color: #ffffff;
     border: none;
     border-radius: 2rem;
