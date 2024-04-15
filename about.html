@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Sem Lagrand</title>
+
+    <div class="header">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./">Home</a>
+            <a href="./renders">Renders</a>
+            <a href="./animaties">Animaties</a>
+            <a href="./modellen">Modellen</a>
+            <a href="./about">About</a>
+        </div>
+          
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+        </div>
+          
+        <script>
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "0px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+        
+        <div class="icon">
+            <a href="#" id="scrollToTop">
+                <img class="logo" src="logo.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("scrollToTop").addEventListener("click", function(event) {
+            event.preventDefault();
+    
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="text">
+            <h1>Hoi, mijn naam is Sem Lagrand</h1>
+            <p> </p>
+            <p>Ik ben 19 jaar oud en studeer momenteel 3D animatie aan de Hogeschool voor de Kunsten Utrecht (HKU). Ik zit nu in mijn eerste jaar op de HKU.</p>
+            <p> </p>
+            <p>Ik heb ongeveer 5 jaar ervaring in Blender, en sinds kort animeer ik in Maya (dit kun je vinden op de animatie pagina). Mijn focus ligt vooral op realistische environment art, maar ik sta altijd open voor iets nieuws.</p>
+            <p> </p>
+            <p>Naast 3D doe ik nog andere dingen op de computer zoals het maken van deze website, het schrijven van simpele programmas om te helpen bij 3D, video bewerken, etc.</p>
+            <p> </p>
+            <p>Je kunt mij bereiken op onderstaand email adres:</p>
+            <p> </p>
+            <a class="email" href="mailto:semlagrand@gmail.com">semlagrand@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page">
+            <div class="page">
+                <div class="page">
+                    <div class="page">
+                        <div class="page">
+                            <div class="page">
+                                <div class="page">
+                                    <div class="page">
+                                        <div class="page">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2024 Sem Lagrand. Alle rechten voorbehouden.
+        </div>
+        <div class="footer-content">
+            <div class="links">
+                <a class="email" href="mailto:semlagrand@gmail.com">semlagrand@gmail.com</a>
+                <a href="./about">About</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

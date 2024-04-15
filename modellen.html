@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Sem Lagrand</title>
+
+    <div class="header">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./">Home</a>
+            <a href="./renders">Renders</a>
+            <a href="./animaties">Animaties</a>
+            <a href="./modellen">Modellen</a>
+            <a href="./about">About</a>
+        </div>
+          
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+        </div>
+          
+        <script>
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "0px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+        
+        <div class="icon">
+            <a href="#" id="scrollToTop">
+                <img class="logo" src="logo.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("scrollToTop").addEventListener("click", function(event) {
+            event.preventDefault();
+    
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="buttons">
+        <div class="button">
+            <a href="./renders">Renders</a>
+        </div>
+        <div class="button">
+            <a href="./animaties">Animaties</a>
+        </div>
+        <div class="button">
+            <a href="./modellen">Modellen</a>
+        </div>
+        <div class="button">
+            <a href="./about">About</a>
+        </div>
+    </div>
+
+    <h1>Modellen</h1>
+
+    <div class="page">
+        <div class="group">
+            <div class="model">
+                <div class="image-container">
+                    <img src="modellen/wooden-crate.jpg" alt="">
+
+                    <div class="overlay-text">
+                        <h1>Houten Krat</h1>
+                        <h2>Vertices: 4328</h2>
+                        <h2>Faces: 4064</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model">
+                <div class="image-container">
+                    <img src="modellen/wooden-ammo-box.jpg" alt="">
+
+                    <div class="overlay-text">
+                        <h1>Houten Munitiekist</h1>
+                        <h2>Vertices: 3532</h2>
+                        <h2>Faces: 3355</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model">
+                <div class="image-container">
+                    <img src="modellen/military-crate.jpg" alt="">
+
+                    <div class="overlay-text">
+                        <h1>Militaire Kist</h1>
+                        <h2>Vertices: 3866</h2>
+                        <h2>Faces: 3856</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="model">
+                <div class="image-container">
+                    <img src="modellen/pallets.jpg" alt="">
+
+                    <div class="overlay-text">
+                        <h1>Pallets</h1>
+                        <h2>Vertices: 320</h2>
+                        <h2>Faces: 204</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2024 Sem Lagrand. Alle rechten voorbehouden.
+        </div>
+        <div class="footer-content">
+            <div class="links">
+                <a class="email" href="mailto:semlagrand@gmail.com">semlagrand@gmail.com</a>
+                <a href="./about">About</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
