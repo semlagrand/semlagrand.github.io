@@ -1,106 +1,84 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sem Lagrand</title>
+    <meta name="description" content="Website van Sem Lagrand">
+    <meta name="keywords" content="3d, animatie, almere">
+
+    <meta property="og:title" content="Sem Lagrand">
+    <meta property="og:description" content="Website van Sem Lagrand">
+    <meta property="og:image" content="https://www.semlagrand.com/renders/OvergrownBuilding.jpg">
+    <meta property="og:url" content="https://www.semlagrand.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sem Lagrand">
+    <meta name="twitter:description" content="Website van Sem Lagrand">
+    <meta name="twitter:image" content="https://www.semlagrand.com/renders/OvergrownBuilding.jpg">
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
-    <title>Sem Lagrand</title>
-
-    <div class="header">
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="./">Home</a>
-            <a href="./renders">Renders</a>
-            <a href="./animaties">Animaties</a>
-            <a href="./modellen">Modellen</a>
-            <a href="./about">About</a>
-        </div>
-          
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">☰</button>  
-        </div>
-          
-        <script>
-            function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "0px";
-            }
-
-            function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-            }
-        </script>
-        
-        <div class="icon">
-            <a href="#" id="scrollToTop">
-                <img class="logo" src="logo.png" alt="">
-            </a>
-        </div>
-    </div>
-
-    <script>
-        document.getElementById("scrollToTop").addEventListener("click", function(event) {
-            event.preventDefault();
-    
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body>
-    <div class="page">
-        <div class="text">
-            <h1>Hoi, mijn naam is Sem Lagrand</h1>
-            <p> </p>
-            <p>Ik ben 19 jaar oud en studeer momenteel 3D animatie aan de Hogeschool voor de Kunsten Utrecht (HKU). Ik zit nu in mijn eerste jaar op de HKU.</p>
-            <p> </p>
-            <p>Ik heb ongeveer 5 jaar ervaring in Blender, en sinds kort animeer ik in Maya (dit kun je vinden op de animatie pagina). Mijn focus ligt vooral op realistische environment art, maar ik sta altijd open voor iets nieuws.</p>
-            <p> </p>
-            <p>Naast 3D doe ik nog andere dingen op de computer zoals het maken van deze website, het schrijven van simpele programmas om te helpen bij 3D, video bewerken, etc.</p>
-            <p> </p>
-            <p>Je kunt mij bereiken op onderstaand email adres:</p>
-            <p> </p>
-            <a class="email" href="mailto:semlagrand@gmail.com">semlagrand@gmail.com</a>
+<body class="dark-mode">
+    <div class="topbar">
+        <a href="#" onclick="scrollToTop()">
+            <svg class="icon" width="64" height="64" viewBox="0 0 176.10153 67.620079">
+                <path
+                d="m -456.70167,-92.928463 h 12.41701 c 12.27108,0 12.42156,-0.0014 12.80396,-0.1196 0.98433,-0.304001 1.71725,-1.244005 1.80729,-2.317689 0.1292,-1.541806 -0.90596,-2.374209 -2.09253,-2.82337 l -8.97567,-0.032 c -9.92288,-0.036 -9.10099,-0.0037 -10.37256,-0.421881 -1.23876,-0.407322 -2.21565,-1.013564 -3.18829,-1.978607 -0.95748,-0.94997 -1.56549,-1.92301 -1.98113,-3.17061 -0.3008,-0.90333 -0.3824,-1.43321 -0.3808,-2.47933 0.001,-1.14973 0.003,-1.16629 0.1516,-1.86537 0.376,-1.76761 1.40701,-3.43885 2.82701,-4.58162 1.31417,-1.05764 2.78009,-1.63764 4.51498,-1.78644 0.53448,-0.0456 4.9007,-0.0596 14.64117,-0.0456 15.4017,0.02 14.24762,-0.008 15.55894,0.41064 1.77841,0.56868 3.09129,1.79672 3.22457,1.92437 0.2968,0.2844 1.70217,1.7366 2.26941,4.23821 0.1288,0.56848 0.1312,0.6636 0.164,6.81791 l 0.032,6.241341 c 0.3168,0.967963 1.04669,1.565166 1.96161,1.961567 l 11.17496,0.028 11.175,0.028 v 5.468621 h -11.38304 c -10.80892,0 -11.40796,-0.004 -11.87732,-0.108801 -1.70433,-0.374801 -3.02337,-1.087284 -4.20158,-2.269128 -1.17444,-1.178045 -1.85777,-2.434769 -2.23973,-4.119176 -0.1288,-0.568402 -0.1312,-0.664522 -0.1644,-6.817864 -0.036,-6.84943 -0.012,-6.37363 -0.3856,-7.01299 -0.1812,-0.3092 -0.71528,-0.8142 -1.03172,-0.97564 -0.62805,-0.3204 0.1952,-0.3036 -14.78114,-0.3028 -14.85981,7.6e-4 -14.10585,-0.016 -14.71413,0.296 -1.04625,0.53384 -1.63645,1.72392 -1.40513,2.83329 0.1932,0.92604 0.787,1.653 1.62789,1.99253 2.98893,0.378 6.18366,0.1604 9.22843,0.172 9.7004,0.036 9.08484,0.016 10.37256,0.3808 3.82669,1.2298 4.99974,4.370216 4.98982,4.370216 0.3296,0.583242 0.5068,1.315324 0.65392,1.984727 0.61716,3.554733 -1.2416,5.980422 -1.28396,5.980422 -0.1776,0.384002 -1.53897,2.319889 -4.11506,3.181892 -1.3368,0.447322 0.02,0.406602 -14.22837,0.427442 l -12.79477,0.02 z"
+                id="path1"/>
+            </svg>
+        </a>
+
+        <div id="navSidebar" class="nav">
+            <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
+            <a href="./">Home</a>
+            <a href="./about">About</a>
         </div>
-    </div>
+        
+        <div class="open-button" onclick="openNav()">
+            <span class="material-symbols-rounded">
+                menu
+            </span>
+        </div>
 
-    <div class="page">
-        <div class="page">
-            <div class="page">
-                <div class="page">
-                    <div class="page">
-                        <div class="page">
-                            <div class="page">
-                                <div class="page">
-                                    <div class="page">
-                                        <div class="page">
+        <script src="script.js"></script>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="toggle-topbar">
+            <div class="toggle">
+                <button id="theme-toggle">
+                    <span class="material-icons">
+                        light_mode
+                    </span>
+                </button>
             </div>
         </div>
     </div>
+
+    <div class="title">
+        <h1>About</h1>
+    </div>
+
+    <div class="page">
+        <div class="text">
+            <h5>Hier wordt nog aan gewerkt!</h5>
+        </div>
+    </div>
+
+    <hr>
 
     <footer>
         <div class="copyright">
-            &copy; 2024 Sem Lagrand. Alle rechten voorbehouden.
+            &copy; 2024 Sem Lagrand.
         </div>
-        <div class="footer-content">
-            <div class="links">
-                <a class="email" href="mailto:semlagrand@gmail.com">semlagrand@gmail.com</a>
-                <a href="./about">About</a>
-            </div>
+
+        <div>
+            <a class="email" href="mailto:semlagrand@gmail.com">semlagrand@gmail.com</a>
         </div>
     </footer>
 </body>
