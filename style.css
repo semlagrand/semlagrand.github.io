@@ -124,10 +124,18 @@ hr {
     transition: 0.3s;
 }
 
-.post {
+.landscape {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8px;
+}
+
+.portrait {
+    padding: 8px;
+}
+
+.square {
     padding: 8px;
 }
 
@@ -139,7 +147,7 @@ hr {
     transition: 0.3s;
 }
 
-.post img {
+.landscape img {
     width: 80vw;
     border-radius: 12px;
     padding: 6px;
@@ -256,18 +264,34 @@ footer a {
         max-width: 50vw;
     }
 
-    .post img {
+    .landscape img {
         max-width: 45vw;
         height: auto;
     }
 
-    .post video {
+    .landscape video {
         max-width: 45vw;
         height: auto;
     }
 
-    .caption {
-        width: 45vw;
+    .portrait {
+        display: flex;
+        flex-direction: grid;
+        justify-content: center;
+    }
+
+    .portrait img {
+        max-width: 25vw;
+    }
+
+    .square {
+        display: flex;
+        flex-direction: grid;
+        justify-content: center;
+    }
+
+    .square img {
+        max-width: 40vw;
     }
 
     canvas {
@@ -284,18 +308,34 @@ footer a {
         max-width: 80vw;
     }
 
-    .post img {
+    .landscape img {
         max-width: 80vw;
         height: auto;
     }
 
-    .post video {
+    .landscape video {
         max-width: 80vw;
         height: auto;
     }
 
-    .caption {
-        width: 80vw;
+    .portrait {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portrait img {
+        max-width: 80vw;
+    }
+
+    .square {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square img {
+        max-width: 80vw;
     }
 
     canvas {
