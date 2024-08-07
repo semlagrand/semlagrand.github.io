@@ -46,3 +46,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all trading card containers
+    const containers = document.querySelectorAll('.trading-card');
+
+    // Loop through each container
+    containers.forEach(container => {
+        const card = container.querySelector('.card');
+
+        // Calculate the center of the card
+        const cardRect = card.getBoundingClientRect();
+        const cardCenterX = cardRect.left + cardRect.width / 2;
+        const cardCenterY = cardRect.top + cardRect.height / 2;
+
+        // Add event listeners to each container
+        container.addEventListener('mousemove', (e) => {
+            // Calculate the distance from the center of the card
+            const xAxis = (cardCenterX - e.pageX) / 25;
+            const yAxis = (cardCenterY - e.pageY) / 25;
+            card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+
+        container.addEventListener('mouseenter', () => {
+            card.style.transition = 'none';
+        });
+
+        container.addEventListener('mouseleave', () => {
+            card.style.transition = 'transform 0.5s ease';
+            card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        });
+    });
+});
+
