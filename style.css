@@ -255,6 +255,43 @@ footer a {
     margin: 24px;
 }
 
+/*TRADING CARDS TRADING CARDS TRADING CARDS*/
+/*TRADING CARDS TRADING CARDS TRADING CARDS*/
+/*TRADING CARDS TRADING CARDS TRADING CARDS*/
+
+.collection {
+    display: flex;
+    justify-content: center;
+}
+
+.trading-card {
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+    perspective: 1000px;
+}
+
+.trading-card:hover {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+
+
 /*DESKTOP DESKTOP DESKTOP*/
 /*DESKTOP DESKTOP DESKTOP*/
 /*DESKTOP DESKTOP DESKTOP*/
@@ -294,8 +331,8 @@ footer a {
         max-width: 40vw;
     }
 
-    canvas {
-        width: 25vw;
+    .card {
+        width: 20vw;
     }
 }
 
@@ -338,7 +375,11 @@ footer a {
         max-width: 80vw;
     }
 
-    canvas {
+    .collection {
+        flex-direction: column;
+    }
+
+    .card {
         width: 80vw;
     }
 }
