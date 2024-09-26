@@ -34,6 +34,14 @@ video {
     object-fit: contain;
 }
 
+iframe {
+    object-fit: contain;
+}
+
+.player:hover {
+    cursor: pointer;
+}
+
 h1 {
     font-weight: bold;
 }
@@ -46,6 +54,13 @@ h5 {
     font-size: 16px;
     font-weight: normal;
     text-align: center;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--background-color);
 }
 
 a {
@@ -290,7 +305,27 @@ footer a {
     z-index: 1;
 }
 
+/*BUTTON BUTTON BUTTON*/
+/*BUTTON BUTTON BUTTON*/
+/*BUTTON BUTTON BUTTON*/
 
+.button-container {
+    margin: 64px 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 16px;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border-style: none;
+    border-radius: 2rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
 
 /*DESKTOP DESKTOP DESKTOP*/
 /*DESKTOP DESKTOP DESKTOP*/
@@ -301,14 +336,27 @@ footer a {
         max-width: 50vw;
     }
 
+    .button {
+        width: 45vw;
+    }
+
     .landscape img {
         max-width: 45vw;
         height: auto;
     }
 
     .landscape video {
-        max-width: 45vw;
+        width: 45vw;
         height: auto;
+    }
+
+    .landscape iframe {
+        width: 45vw;
+        height: 25.3vw;
+    }
+
+    .post-desc {
+        max-width: 35vw;
     }
 
     .portrait {
@@ -345,14 +393,27 @@ footer a {
         max-width: 80vw;
     }
 
+    .button {
+        width: 80vw;
+    }
+
     .landscape img {
         max-width: 80vw;
         height: auto;
     }
 
     .landscape video {
-        max-width: 80vw;
+        width: 80vw;
         height: auto;
+    }
+
+    .landscape iframe {
+        width: 80vw;
+        height: 45vw;
+    }
+
+    .post-desc {
+        max-width: 72vw;
     }
 
     .portrait {
