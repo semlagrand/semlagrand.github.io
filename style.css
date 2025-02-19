@@ -103,6 +103,7 @@ hr {
     border-style: solid;
     border-width: 2px;
     border-radius: 1rem;
+    color: var(--foreground-color);
 }
 
 .link {
@@ -118,54 +119,17 @@ hr {
 
 /* Top navigation */
 
-.nav {
-    height: 100%;
-    width: 0;
-    left: 0;
-    position: fixed;
-    z-index: 1;
-    background-color: var(--background-color);
-    overflow-x: hidden;
-    transition: 0.4s;
-    padding-top: 48px;
-    transition: 0.3s;
-}
-
-.nav a {
-    padding: 8px 8px 8px 32px;
-    display: block;
-    background-color: var(--background-color);
-    transition: 0.3s;
-}
-
-.nav a:hover {
-    color: #dddddd;
-}
-
 .toggle-topbar {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.close-button {
-    position: absolute;
-    top: 0;
-    right: 12;
-}
-
-.open-button {
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    border: none;
-}
-
 .topbar {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
+    height: 64px;
     top: 0;
     position: fixed;
     z-index: 1;
@@ -173,15 +137,13 @@ hr {
     transition: 0.3s;
 }
 
-.topbar img {
-    height: 42px;
-    padding: 8px;
-    background-color: var(--background-color);
-    transition: 0.3s;
+.topbar .logo {
+    position: absolute;
+    left: 16px;
 }
 
 .topbar-link {
-    left: 32;
+    left: 64px;
     margin-left: 32px;
     margin-top: 21px;
     position: fixed;
@@ -235,51 +197,9 @@ hr {
     border-radius: 16px;
 }
 
-.post-right {
-    position: relative;
-    width: 80vw;
-    display: flex;
-    justify-content: right;
-    margin: 8px;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: var(--foreground-color);
-}
-
-.post-left {
-    position: relative;
-    width: 80vw;
-    display: flex;
-    justify-content: left;
-    margin: 8px;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: var(--foreground-color);
-}
-
-.see-more-right {
-    position: absolute;
-    bottom: 32px;
-    left: 32px;
-    display: flex;
-    justify-content: center;
-}
-
-.see-more-left {
-    position: absolute;
-    bottom: 32px;
-    right: 32px;
-    display: flex;
-    justify-content: center;
-}
-
 .text {
     display: grid;
     margin: auto;
-}
-
-.img {
-    width: 50vw;
 }
 
 img {
@@ -287,10 +207,6 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-}
-
-.vid {
-    width: 50vw;
 }
 
 .vid:hover {
@@ -302,6 +218,10 @@ video {
     width: 100%;
     height: 100%;
     border-radius: 8px;
+}
+
+.name:hover {
+    cursor: pointer;
 }
 
 /*About Me*/
@@ -429,9 +349,65 @@ footer a {
 }
 
 @media only screen and (min-width: 769px) {
+    .post-right {
+        position: relative;
+        width: 80vw;
+        display: flex;
+        justify-content: right;
+        margin: 8px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: var(--foreground-color);
+    }
+    
+    .post-left {
+        position: relative;
+        width: 80vw;
+        display: flex;
+        justify-content: left;
+        margin: 8px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: var(--foreground-color);
+    }
 
+    .img {
+        width: 50vw;
+    }
+
+    .vid {
+        width: 50vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .post-right {
+        position: relative;
+        width: 90vw;
+        display: grid;
+        justify-content: right;
+        margin: 8px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: var(--foreground-color);
+    }
+    
+    .post-left {
+        position: relative;
+        width: 90vw;
+        display: grid;
+        justify-content: left;
+        margin: 8px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: var(--foreground-color);
+    }
 
+    .img {
+        width: 90vw;
+    }
+
+    .vid {
+        width: 90vw;
+    }
 }

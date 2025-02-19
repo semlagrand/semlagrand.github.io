@@ -42,7 +42,7 @@
     </script>
 
     <div class="topbar">
-        <a href="#" onclick="scrollToTop()">
+        <a class="logo" href="#" onclick="scrollToTop()">
             <svg class="icon" width="64" height="64" viewBox="0 0 176.10153 67.620079">
                     <path
                     d="m 57.374577,58.8336 v -8.78562 l 17.809042,-0.003 17.80904,-0.003 1.878907,-1.07764 c 3.332901,-1.91156 3.561431,-2.59666 3.842301,-11.51883 0.16592,-5.27042 0.42759,-8.35763 0.83604,-9.86347 2.216153,-8.17032 8.915243,-15.42954 16.457513,-17.83356 4.9045,-1.56326 13.60152,-1.47832 18.60929,0.18174 5.92932,1.96556 12.33575,8.06213 14.47216,13.77218 1.62525,4.34389 1.87743,5.95005 2.0716,13.19514 0.21228,7.91914 0.5614,9.32076 2.78953,11.19971 2.2053,1.85966 2.80937,1.95159 12.82428,1.95159 h 9.32725 v 8.76752 8.76753 h -9.46603 c -11.02069,0 -13.68247,-0.36744 -18.11517,-2.5007 -6.85382,-3.29844 -11.30454,-8.47627 -13.70809,-15.94764 -0.69802,-2.16985 -0.85733,-3.69156 -1.05172,-10.04613 -0.18947,-6.19382 -0.34438,-7.72269 -0.89585,-8.84065 -2.22001,-4.50057 -9.45415,-5.78103 -13.55649,-2.39952 -2.37539,1.95799 -2.52372,2.5472 -2.78367,11.05752 -0.21459,7.02517 -0.31754,7.91783 -1.22187,10.59409 -1.48188,4.38548 -3.29383,7.34471 -6.38996,10.43591 -3.08409,3.07918 -6.28392,5.04977 -10.562093,6.50458 l -2.800733,0.9524 -19.087637,0.11316 -19.087639,0.11317 z"
@@ -65,21 +65,6 @@
             <a href="./code">Code</a>
         </div>
 
-        <div id="navSidebar" class="nav">
-            <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            <a href="./projects">Projects</a>
-            <a href="./models">Models</a>
-            <a href="./shaders">Shaders</a>
-            <a href="./code">Code</a>
-            <a href="./about-me">About Me</a>
-        </div>
-        
-        <div class="open-button" onclick="openNav()">
-            <span class="material-symbols-rounded">
-                menu
-            </span>
-        </div>
-
         <script src="script.js"></script>
 
         <div class="toggle-topbar">
@@ -95,21 +80,18 @@
 </head>
 
 <body class="dark-mode">
-    <div class="title">
-        <h1>PORTFOLIO</h1>
-    </div>
+    <hr>
 
     <h2>Projects</h2>
 
     <div class="feed">
         <div class="post-right">
             <div class="text">
-                <h3>Antique Shop</h3>
+                <div class="name" onclick="window.location.href = './projects/antique-shop'">
+                    <h3>Antique Shop</h3>
+                </div>
                 <h4>Blender, KIRI Engine, DaVinci Resolve Studio</h4>
                 <h5>November 14th, 2024</h5>
-            </div>
-            <div class="see-more-right">
-                <a href="/projects/antique-shop.html">See more</a>
             </div>
             <div class="vid">
                 <video src="videos/antique-shop-short.webm" controls autoplay muted controlslist="nodownload noplaybackrate" disablePictureInPicture loop></video>
@@ -121,23 +103,21 @@
                 <video src="videos/duif.webm" controls autoplay muted controlslist="nodownload noplaybackrate" disablePictureInPicture loop></video>
             </div>
             <div class="text">
-                <h3>Duif</h3>
+                <div class="name" onclick="window.location.href = './projects/duif'">
+                    <h3>Duif</h3>
+                </div>
                 <h4>Blender, DaVinci Resolve</h4>
                 <h5>September 10th, 2024</h5>
-            </div>
-            <div class="see-more-left">
-                <a href="/projects/duif.html">See more</a>
             </div>
         </div>
 
         <div class="post-right">
             <div class="text">
-                <h3>Overgrown Building</h3>
+                <div class="name" onclick="window.location.href = './projects/overgrown-building'">
+                    <h3>Overgrown Building</h3>
+                </div>
                 <h4>Blender, DaVinci Resolve Studio</h4>
                 <h5>August 15th, 2024</h5>
-            </div>
-            <div class="see-more-right">
-                <a href="/projects/overgrown-building.html">See more</a>
             </div>
             <div class="vid">
                 <video src="videos/overgrown-building-layers.webm" autoplay muted loop></video>
@@ -150,8 +130,11 @@
     <div class="feed">
         <div class="post-right">
             <div class="text">
-                <h3>Red Barrels</h3>
+                <div class="name" onclick="window.location.href = './models/red-barrels'">
+                    <h3>Red Barrels</h3>
+                </div>
                 <h4>Blender, Substance 3D Painter 2024</h4>
+                <h5></h5>
             </div>
             <div class="img">
                 <img src="images/red-barrels.jpg" alt="">
@@ -164,11 +147,11 @@
     <div class="feed">
         <div class="post-right">
             <div class="text">
-                <h3>Half-Tone Shader</h3>
+                <div class="name" onclick="window.location.href = './shaders/halftone'">
+                    <h3>Halftone Shader</h3>
+                </div>
                 <h4>Blender</h4>
-            </div>
-            <div class="see-more-right">
-                <a href="/shaders/halftone.html">See more</a>
+                <h5></h5>
             </div>
             <div class="img">
                 <img src="images/halftone.jpg" alt="">
@@ -180,21 +163,21 @@
                 <img src="images/terrazzo-1.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Terrazzo Shader</h3>
+                <div class="name" onclick="window.location.href = './shaders/terrazzo'">
+                    <h3>Terrazzo Shader</h3>
+                </div>
                 <h4>Blender</h4>
-            </div>
-            <div class="see-more-left">
-                <a href="/shaders/terrazzo.html">See more</a>
+                <h5></h5>
             </div>
         </div>
 
         <div class="post-right">
             <div class="text">
-                <h3>Water Shader</h3>
+                <div class="name" onclick="window.location.href = './shaders/water'">
+                    <h3>Water Shader</h3>
+                </div>
                 <h4>Blender</h4>
-            </div>
-            <div class="see-more-right">
-                <a href="/shaders/water.html">See more</a>
+                <h5></h5>
             </div>
             <div class="img">
                 <img src="images/water.jpg" alt="">
