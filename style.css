@@ -167,21 +167,14 @@ hr {
     transition: 0.2s ease-in-out;
 }
 
-.title:hover {
-    letter-spacing: 0.5rem;
-    transition: 0.2s ease-in-out;
-    cursor: default;
-}
-
 .feed {
     display: grid;
     justify-content: center;
 }
 
 .post {
-    width: 60vw;
     display: grid;
-    justify-content: center;
+    justify-self: center;
     padding: 8px;
     border-radius: 8px;
     background-color: var(--foreground-color);
@@ -200,6 +193,12 @@ hr {
 .text {
     display: grid;
     margin: auto;
+}
+
+.description {
+    display: grid;
+    justify-self: center;
+    margin: 16px;
 }
 
 img {
@@ -349,6 +348,16 @@ footer a {
 }
 
 @media only screen and (min-width: 769px) {
+    .title:hover {
+        letter-spacing: 0.5rem;
+        transition: 0.2s ease-in-out;
+        cursor: default;
+    }
+    
+    .post {
+        width: 60vw;
+    }
+
     .post-right {
         position: relative;
         width: 80vw;
@@ -377,10 +386,18 @@ footer a {
 
     .vid {
         width: 50vw;
+    }
+
+    .description {
+        width: 40vw;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    .post {
+        width: 90vw;
+    }
+
     .post-right {
         position: relative;
         width: 90vw;
@@ -409,5 +426,9 @@ footer a {
 
     .vid {
         width: 90vw;
+    }
+
+    .description {
+        width: 80vw;
     }
 }
