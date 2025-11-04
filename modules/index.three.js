@@ -1,27 +1,21 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
-
-let xMouseMove = 0;
-let yMouseMove = 0;
+import { mouseHorizontal, mouseVertical, scrollAmount } from './mouse.js';
 
 const mouseMoveIntensity = 0.01;
 
 const model = './assets/models/head.glb';
 const hdri = './assets/images/hdr/environment.hdr';
 
-document.addEventListener('mousemove', (event) => {
-    xMouseMove = (event.clientX / window.innerWidth) * 2 - 1;
-    yMouseMove = -(event.clientY / window.innerHeight) * 2 + 1;
-});
-
 export function setupThreeJS() {
     const scene = new THREE.Scene();
 
-    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const page = document.getElementsByClassName('landingPage')[0];
+    const camera = new THREE.PerspectiveCamera(50, page.clientWidth / page.clientHeight, 0.1, 1000);
     
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(page.clientWidth, page.clientHeight);
 
     const container = document.getElementById('threejs');
     container.appendChild(renderer.domElement);
@@ -41,21 +35,26 @@ export function setupThreeJS() {
             scene.add(gltf.scene);
             gltf.scene.position.set(0, 0, 0);
         },
-        xhr => console.log((xhr.loaded / xhr.total * 100) + '% loaded'),
         error => console.error('Error loading GLB:', error)
     );
 
     window.addEventListener('resize', () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.aspect = page.clientWidth / page.clientHeight;
         camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(page.clientWidth, page.clientHeight);
     });
 
     const animate = () => {
         requestAnimationFrame(animate);
         
-        camera.rotation.y = xMouseMove * mouseMoveIntensity;
-        camera.rotation.x = yMouseMove * mouseMoveIntensity;
+        camera.rotation.y = mouseHorizontal * mouseMoveIntensity;
+        camera.rotation.x = mouseVertical * mouseMoveIntensity;
+
+        const loadedModel = scene.children.find(child => child.type === 'Group');
+        if (loadedModel) {
+            loadedModel.rotation.y = scrollAmount * -0.001;
+            loadedModel.position.z = scrollAmount * -0.01;
+        }
         
         renderer.render(scene, camera);
     };
