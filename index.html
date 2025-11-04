@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <link rel="icon" type="image/png" href="./icons/favicon.png"/>
 
     <script type="importmap">
     {
@@ -17,10 +20,25 @@
     }
     </script>
     <script type="module" src="main.js"></script>
+    <script type="module" src="modules/navigation.js"></script>
 </head>
+
 <body>
+    <nav class="navigation">
+        <div class="logo" id="logo_button">
+            <img src="./icons/logo.svg" alt="">
+        </div>
+        <div class="navigationButtons">
+            <button class="navigationButton" id="portfolio_button">Portfolio</button>
+            <button class="navigationButton" id="projects_button">Projects</button>
+            <button class="navigationButton" id="coding_button">Coding</button>
+            <button class="navigationButton" id="photography_button">Photography</button>
+            <button class="navigationButton" id="contact_button">Contact</button>
+        </div>
+    </nav>
+
     <div class="landingPage">
-        <div class="viewer3D" id="threejs"></div>
+        <div class="viewer3D" id="three_js"></div>
     </div>
 
     <div class="page">

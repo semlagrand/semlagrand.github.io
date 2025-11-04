@@ -17,7 +17,7 @@ export function setupThreeJS() {
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(page.clientWidth, page.clientHeight);
 
-    const container = document.getElementById('threejs');
+    const container = document.getElementById('three_js');
     container.appendChild(renderer.domElement);
 
     const rgbeLoader = new RGBELoader();

@@ -20,10 +20,14 @@
     
     --fontWeight: 500;
 
+    --logoSize: 64px;
+    
+    --padding: 8px;
+    --gap: 8px;
+
     --cardPadding: 8px;
     --cardMargin: 16px;
     --columnGap: 16px;
-    --rowGap: 8px;
     --navigationButtonPadding: 8px 16px;
 
     --edgeRounding: 2rem;
