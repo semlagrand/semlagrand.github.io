@@ -1,0 +1,46 @@
+* {margin: 0;}
+
+@font-face {
+    font-family: 'Unageo';
+    src: url("./fonts/Unageo_Variable.ttf");
+}
+
+:root {
+    --textColor: #f0f0f0;
+    --textHover: #e0e0e0;
+    --primaryColor: #d0d0d0;
+    --primaryHover: #c0c0c0;
+    --grayBackgroundColor: #303030;
+    --darkBackgroundColor: #101010;
+    --accentColor: #5bad3b;
+    --accentHover: #527a42;
+    --darkAccent: #3a4735;
+    --darkHover: #2e332c;
+    --secondaryColor: #2b3332;
+    
+    --fontWeight: 500;
+
+    --cardPadding: 8px;
+    --cardMargin: 16px;
+    --columnGap: 16px;
+    --rowGap: 8px;
+    --navigationButtonPadding: 8px 16px;
+
+    --edgeRounding: 2rem;
+    --innerBorderRadius: 8px;
+    --outerBorderRadius: calc(var(--innerBorderRadius) + var(--cardPadding));
+
+    --buttonBorder: 2px solid;
+    --cardBorder: 1px solid #505050;
+
+    --blurRadius: 16px;
+    --blurGradient: linear-gradient(#000000ff 0%, #000000bb 50%, #00000000 100%);
+    --blurGradientHeight: calc(var(--blurRadius) * 4);
+
+    --transitionQuick: 200ms ease-in-out;
+    --transitionSlow: 400ms ease-in-out;
+
+    --cardHoverEffect: '';
+    --hoverGradient: linear-gradient(transparent, var(--highlightColor) 45%, var(--highlightColor) 55%, transparent);
+    --hoverGradientHorizontal: linear-gradient(90deg, transparent, var(--highlightColor) 45%, var(--highlightColor) 55%, transparent);
+}

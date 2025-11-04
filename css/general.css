@@ -1,0 +1,18 @@
+.landingPage {
+    height: 100vh;
+    background-color: var(--darkBackgroundColor);
+}
+
+.constructionText {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Unageo';
+    font-size: 5vw;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+}
