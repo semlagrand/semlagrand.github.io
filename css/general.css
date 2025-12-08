@@ -6,5 +6,5 @@
 
 .page {
     height: 200vh;
-    background-color: var(--darkBackgroundColor);
+    background: var(--backgroundGradient);
 }
