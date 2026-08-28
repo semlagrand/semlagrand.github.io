@@ -10,12 +10,12 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('menu_toggle').onclick = (e) => {
+    document.getElementById('menu-toggle').onclick = (e) => {
         const navigation = document.getElementById('navigation_side');
         navigation.classList.toggle('open');
     };
 
-    const themeToggleButton = document.getElementById('theme_toggle');
+    const themeToggleButton = document.getElementById('theme-toggle');
     const bodyElement = document.body;
 
     const setDefaultTheme = () => {

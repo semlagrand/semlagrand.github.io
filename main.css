@@ -1,13 +1,10 @@
 @import url('/.css/main/main.navigation.css');
 @import url('/.css/main/main.page.css');
-@import url('/.css/main/main.footer.css');
 
 @import url('/.css/main/main.font.css');
 @import url('/.css/main/main.theme.css');
 
 @import url('/.css/footer/footer.main.css');
-
-@import url('/.css/section/section.featured.css');
 
 :root {
     --border: 1px solid;
@@ -17,7 +14,7 @@
     --borderTransparent: 1px solid transparent;
     --borderDrop: 2px dashed var(--borderColor);
     --innerBorderRadius: 0.5rem;
-    --outerBorderRadius: calc(var(--innerBorderRadius) + var(--padding));
+    --outerBorderRadius: calc(var(--innerBorderRadius) + var(--paddingL));
     --buttonBorderRadius: 2rem;
     --circleBorderRadius: 50%;
     
@@ -41,12 +38,15 @@
     --paddingMW: 0.5rem 1rem;
     --paddingLW: 1rem 2rem;
     
-    --marginSmall: 0.25rem;
-    --marginMedium: 0.5rem;
-    --marginLarge: 1rem;
-    --iconSmall: 1.5rem;
-    --iconMedium: 2rem;
-    --iconLarge: 3rem;
+    --marginS: 0.25rem;
+    --marginM: 0.5rem;
+    --marginL: 1rem;
+    --marginXL: 2rem;
+
+    --iconS: 1.5rem;
+    --iconM: 2rem;
+    --iconL: 3rem;
+
     --logoPadding: 0.25rem;
     --logoPaddingWide: 0.25rem 0.5rem;
     --inputSmall: 1.2rem;
@@ -55,9 +55,6 @@
     --heroBorderRadius: 8rem;
 
     --mainElementWidth: 60vw;
-
-    --transitionQuick: 120ms ease-in-out;
-    --transition: 300ms ease-in-out;
 }
 
 * { margin: 0; padding: 0;}
@@ -73,11 +70,4 @@ main.page {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main.page iframe {
-    height: 27vw;
-    width: 48vw;
-    border-radius: var(--outerBorderRadius);
-    border: var(--border) var(--borderColor);
 }

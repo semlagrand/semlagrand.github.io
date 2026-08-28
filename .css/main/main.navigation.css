@@ -8,7 +8,7 @@
     height: var(--navigationHeight);
     background-color: var(--primaryColor);
     justify-content: space-between;
-    padding: var(--padding) var(--gapLarge);
+    padding: var(--paddingL) var(--gapL);
     box-sizing: border-box;
 }
 
@@ -25,14 +25,14 @@
 }
 
 .navigationLogo img {
-    width: calc(var(--navigationHeight) - var(--padding));
+    width: calc(var(--navigationHeight) - var(--paddingL));
 }
 
 .navigationLinks {
     height: 100%;
     display: flex;
     align-items: center;
-    gap: var(--gapMedium);
+    gap: var(--gapM);
 }
 
 .navigationLinks a {
@@ -42,13 +42,13 @@
 
 .themeToggle,
 .navigationToggle {
-    width: var(--iconMedium);
-    height: var(--iconMedium);
+    width: var(--iconM);
+    height: var(--iconM);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: var(--transitionQuick);
+    transition: 200ms ease-in-out;
     border-radius: var(--circleBorderRadius);
 }
 .navigationToggle {
@@ -58,20 +58,20 @@
 .themeToggle:hover,
 .navigationToggle:hover {
     background-color: var(--secondaryColor);
-    transition: var(--transitionQuick);
+    transition: 200ms ease-in-out;
 }
 
 .themeToggle img,
 .navigationToggle img {
-    width: calc(var(--iconMedium) - var(--padding));
+    width: calc(var(--iconM) - var(--paddingL));
 }
 
 .navigationControls {
     display: flex;
     width: fit-content;
-    gap: var(--gapSmall);
+    gap: var(--gapS);
     align-items: center;
-    margin: 0 var(--marginMedium);
+    margin: 0 var(--marginM);
 }
 
 .sideNavigation {
@@ -84,7 +84,7 @@
     top: var(--navigationHeight);
 }
 .sideNavigation a {
-    padding: var(--paddingWide);
+    padding: var(--paddingLW);
     color: var(--textColor);
     background-color: var(--primaryColor);
     transition: var(--transitionQuick);
@@ -96,7 +96,11 @@
 
 .sideNavigation a:hover {
     background-color: var(--secondaryColor);
-    transition: var(--transitionQuick);
+    transition: 200ms ease-in-out;
+}
+
+.navigationLinks a:hover {
+    background-color: var(--buttonSecondaryColor);
 }
 
 @media (max-width: 50rem) {
