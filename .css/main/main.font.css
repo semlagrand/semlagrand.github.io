@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Unageo';
+    src: url('/.assets/fonts/Unageo.ttf') format('truetype');
+}
+
+:root {
+    --font: 'Unageo', sans-serif;
+
+    --h1: 700 3rem var(--font);
+    --h2: 700 2.5rem var(--font);
+    --h3: 600 1.8rem var(--font);
+    --h4: 600 1.5rem var(--font);
+    --h5: 600 1.2rem var(--font);
+    --h6: 500 1rem var(--font);
+
+    --p: 500 1rem var(--font);
+    --a: 500 1rem var(--font);
+
+    --label: 600 1rem var(--font);
+    --span: 800 1rem var(--font);
+    --section: 700 0.8rem var(--font);
+}
+
+h1 { font: var(--h1); }
+h2 { font: var(--h2); }
+h3 { font: var(--h3); }
+h4 { font: var(--h4); }
+h5 { font: var(--h5); }
+h6 { font: var(--h6); }
+
+p { font: var(--p); }
+a { font: var(--a); text-decoration: none; }
+
+label { font: var(--label); }
+span { font: var(--span); }
+li { font: var(--p); }
+code {
+    font: var(--p);
+    background-color: var(--componentColor);
+    padding: var(--paddingCode);
+    border-radius: var(--innerBorderRadius);
+}
+ul, ol { line-height: 0.6rem; padding-left: 1rem;}

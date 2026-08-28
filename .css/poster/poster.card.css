@@ -1,0 +1,27 @@
+poster-card { transition: var(--transitionQuick); }
+poster-card:hover { transform: scale(1.01); transition: var(--transitionQuick); }
+
+.posterCard {
+    display: grid;
+    gap: var(--gapSmall);
+    text-align: center;
+    border-radius: var(--outerBorderRadius);
+    width: 15vw;
+}
+
+.posterCard p {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.posterMedia img {
+    width: 100%;
+    border: var(--border);
+    border-color: transparent;
+    border-radius: var(--outerBorderRadius);
+}
+
+.posterCard:hover img {
+    border: var(--border);
+    border-color: var(--borderHoverColor);
+}

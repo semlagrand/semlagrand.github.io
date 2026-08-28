@@ -1,0 +1,114 @@
+/* Top-navigation bar */
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    height: var(--navigationHeight);
+    background-color: var(--primaryColor);
+    justify-content: space-between;
+    padding: var(--padding) var(--gapLarge);
+    box-sizing: border-box;
+}
+
+.themeDark .navigation {
+    background-color: var(--backgroundColor);
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.navigationLogo {
+    display: flex;
+    align-items: center;
+    gap: var(--gapSmall);
+    color: var(--textColor);
+}
+
+.navigationLogo img {
+    width: calc(var(--navigationHeight) - var(--padding));
+}
+
+.navigationLinks {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--gapMedium);
+}
+
+.navigationLinks a {
+    font: var(--a);
+    color: var(--staticTextColor);
+}
+
+.themeToggle,
+.navigationToggle {
+    width: var(--iconMedium);
+    height: var(--iconMedium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transitionQuick);
+    border-radius: var(--circleBorderRadius);
+}
+.navigationToggle {
+    display: none;
+}
+
+.themeToggle:hover,
+.navigationToggle:hover {
+    background-color: var(--secondaryColor);
+    transition: var(--transitionQuick);
+}
+
+.themeToggle img,
+.navigationToggle img {
+    width: calc(var(--iconMedium) - var(--padding));
+}
+
+.navigationControls {
+    display: flex;
+    width: fit-content;
+    gap: var(--gapSmall);
+    align-items: center;
+    margin: 0 var(--marginMedium);
+}
+
+.sideNavigation {
+    display: none;
+}
+
+.sideNavigation.open {
+    display: grid;
+    position: sticky;
+    top: var(--navigationHeight);
+}
+.sideNavigation a {
+    padding: var(--paddingWide);
+    color: var(--textColor);
+    background-color: var(--primaryColor);
+    transition: var(--transitionQuick);
+}
+.themeDark .sideNavigation a {
+    background-color: var(--backgroundColor);
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.sideNavigation a:hover {
+    background-color: var(--secondaryColor);
+    transition: var(--transitionQuick);
+}
+
+@media (max-width: 50rem) {
+    .accordion { width: 90vw; }
+    .checkboxWide { width: 90vw; }
+    .checkboxCard { width: 90vw; }
+    .navigationToggle { display: flex; }
+    .footerContent { flex-direction: column; }
+    .navigationLinks { display: none; }
+    .navigationLogo p { display: none; }
+}
+
+@media (min-width: 50rem) {
+    .sideNavigation.open { display: none; }
+}

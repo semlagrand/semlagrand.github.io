@@ -1,0 +1,49 @@
+.themeDark {
+    --primaryColor: #fcb61f;
+    --secondaryColor: #f3a71a;
+    --disabledColor: #ffb62080;
+    --textColor: #f0f0f0;
+    --textHoverColor: #e0e0e0;
+    --textColorSubtle: #c0c0c0;
+    --staticTextColor: #f0f0f0;
+    --staticTextHoverColor: #e0e0e0;
+    --linkColor: #101010;
+    --linkHoverColor: #202020;
+    --backgroundColor: #101010;
+    --componentColor: #202020;
+    --componentHoverColor: #303030;
+    --componentGradient: linear-gradient(225deg, #202020, #303030);
+    --borderColor: #404040;
+    --borderHoverColor: #f0f0f0;
+    --buttonColor: #f0f0f0;
+    --buttonHoverColor: #e0e0e0;
+    --buttonSecondaryColor: #202020;
+    --buttonSecondaryHoverColor: #303030;
+
+    --invertBase: none;
+}
+
+.themeLight {
+    --primaryColor: #ffc229;
+    --secondaryColor: #ffb620;
+    --disabledColor: #ffb62080;
+    --textColor: #101010;
+    --textHoverColor: #202020;
+    --textColorSubtle: #303030;
+    --staticTextColor: #f0f0f0;
+    --staticTextHoverColor: #e0e0e0;
+    --linkColor: #f0f0f0;
+    --linkHoverColor: #e0e0e0;
+    --backgroundColor: #f0f0f0;
+    --componentColor: #e0e0e0;
+    --componentHoverColor: #c0c0c0;
+    --componentGradient: linear-gradient(225deg, #e0e0e0, #f0f0f0);
+    --borderColor: #c0c0c0;
+    --borderHoverColor: #f0f0f0;
+    --buttonColor: #f0f0f0;
+    --buttonHoverColor: #e0e0e0;
+    --buttonSecondaryColor: #202020;
+    --buttonSecondaryHoverColor: #303030;
+
+    --invertBase: invert(1);
+}

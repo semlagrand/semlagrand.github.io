@@ -1,0 +1,42 @@
+main.page {
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--backgroundColor);
+    padding: var(--gapLarge);
+}
+
+.sectionTitle {
+    color: var(--textColor);
+    text-align: left;
+    border-bottom: var(--border);
+    border-color: var(--borderColor);
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.sectionTitle h2 {
+    font: var(--section);
+    text-transform: uppercase;
+    color: var(--textColorSubtle);
+}
+
+.productSection {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--gapMedium);
+    width: var(--mainElementWidth);
+    padding: var(--paddingLarge);
+}
+
+.posterSection {
+    display: flex;
+    gap: var(--gapMedium);
+    padding: var(--paddingLarge);
+    overflow: scroll;
+}

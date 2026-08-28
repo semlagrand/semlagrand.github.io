@@ -1,0 +1,51 @@
+footer {
+    background-color: var(--backgroundColor);
+}
+
+.footerContent {
+    display: flex;
+}
+
+.footerLinks {
+    display: flex;
+    gap: var(--gapS);
+    padding: 0 var(--paddingXL);
+}
+
+.footerContact {
+    color: var(--textColor);
+}
+
+
+.footerLink {
+    display: flex;
+    height: fit-content;
+    padding: var(--paddingM);
+    transition: 200ms ease-in-out;
+}
+
+.footerLink:hover {
+    scale: 1.1;
+    transition: 200ms ease-in-out;
+}
+
+.footerLink img {
+    width: 2.5rem;
+    height: 2.5rem;
+    user-select: none;
+}
+
+.footerDetail {
+    display: flex;
+    height: fit-content;
+    user-select: none;
+}
+
+.footerClock {
+    font-family: 'Unageo';
+    font-size: 12rem;
+    font-weight: 800;
+    color: var(--textColor);
+    padding: 0 var(--paddingL);
+    user-select: none;
+}
