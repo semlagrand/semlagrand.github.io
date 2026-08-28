@@ -5,31 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sem Lagrand</title>
 
+    <link rel="shortcut icon" href="/.assets/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="/.css/main.css">
 
     <script src="/.js/clock.js" defer></script>
+    <script src="/.js/main.js" defer></script>
 </head>
-<body class="themeDark">
-    <main class="page">
 
+<body class="themeDark">
+    <nav class="navigation">
+        <a class="navigationLogo" href="/">
+            <img src="/.assets/svg/logo.svg" alt="Puffered Fish Logo">
+            <p>Puffered Fish</p>
+        </a>
+
+        <div class="navigationLinks">
+            <a href="/pricing">Pricing</a>
+            <a href="/features">Features</a>
+            <a href="/support">Support</a>
+            <a href="/documentation">Documentation</a>
+            <a href="/download">Download</a>
+        </div>
+
+        <div class="navigationControls">
+            <div class="themeToggle" id="theme_toggle">
+                <img src="/.assets/icons/sun.svg" alt="Toggle Theme">
+            </div>
+            <div class="navigationToggle" id="menu_toggle">
+                <img src="/.assets/icons/menu.svg" alt="Toggle Menu">
+            </div>
+        </div>
+    </nav>
+
+    <nav class="sideNavigation" id="navigation_side">
+        <a href="/pricing">Pricing</a>
+        <a href="/features">Features</a>
+        <a href="/support">Support</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/download">Download</a>
+    </nav>
+
+    <main class="page">
+        <section class="featuredSection">
+            <div class="featuredPoster">
+                <img src="/.assets/images/posters/gym-anxiety-release.jpg" alt="">
+            </div>
+            <div class="featuredOverview">
+                <div class="featuredTitle">Gym Anxiety (2026)</div>
+                <div class="featuredDescription">A young man goes to the gym for the first time and feels like he is constantly being watched.</div>
+                <div class="featuredPeople">
+                    <div class="featuredDirectors">
+                        <p>Director</p>
+                        <ul>
+                            <li>Xander Schrauwen</li>
+                        </ul>
+                    </div>
+                    <div class="featuredWriters">
+                        <p>Writers</p>
+                        <ul>
+                            <li>Abel Tulp</li>
+                            <li>Elsa de Swart</li>
+                            <li>Sem Lagrand</li>
+                            <li>Thomas Wind</li>
+                            <li>Xander Schrauwen</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="/projects/gym-anxiety.html">Read more...</a>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="footerContent">
-            <div class="footerContact">
-                <p>semlagrand@gmail.com</p>
-            </div>
             <div class="footerLinks">
+                <a class="footerLink" href="mailto:semlagrand@gmail.com">
+                    <p>semlagrand@gmail.com</p>
+                </a>
+
+                <div class="verticalDivider"></div>
+
                 <a class="footerLink" href="https://www.instagram.com/semlagrand">
                     <img src="/.assets/icons/socials/instagram.png" alt="Instagram external link">
+                    <p>Instagram</p>
                 </a>
+
                 <a class="footerLink" href="https://www.youtube.com/@semlagrand">
                     <img src="/.assets/icons/socials/youtube.png" alt="YouTube external link">
+                    <p>YouTube</p>
                 </a>
+
                 <a class="footerLink" href="https://www.linkedin.com/in/semlagrand">
                     <img src="/.assets/icons/socials/linkedin.png" alt="LinkedIn external link">
+                    <p>LinkedIn</p>
                 </a>
             </div>
+            
             <div class="footerClock" id="clock" title="Local time (CEST)"></div>
         </div>
         <div class="footerDetail">

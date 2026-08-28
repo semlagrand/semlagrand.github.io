@@ -1,14 +1,17 @@
-footer {
+.footer {
     background-color: var(--backgroundColor);
 }
 
 .footerContent {
     display: flex;
+    justify-content: space-between;
 }
 
 .footerLinks {
     display: flex;
-    gap: var(--gapS);
+
+    align-items: center;
+    gap: var(--gapXL);
     padding: 0 var(--paddingXL);
 }
 
@@ -22,6 +25,17 @@ footer {
     height: fit-content;
     padding: var(--paddingM);
     transition: 200ms ease-in-out;
+    align-items: center;
+
+    gap: var(--gapS);
+}
+
+.footerLink p {
+    font-family: 'Unageo';
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    color: var(--textColor);
 }
 
 .footerLink:hover {
@@ -30,8 +44,8 @@ footer {
 }
 
 .footerLink img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     user-select: none;
 }
 
@@ -43,9 +57,14 @@ footer {
 
 .footerClock {
     font-family: 'Unageo';
-    font-size: 12rem;
+    font-size: 10rem;
     font-weight: 800;
     color: var(--textColor);
     padding: 0 var(--paddingL);
     user-select: none;
+}
+
+.verticalDivider {
+    height: 2rem;
+    border-right: 2px solid var(--borderColor);
 }
