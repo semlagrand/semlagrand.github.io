@@ -11,6 +11,9 @@
 
     <script src="/main.js" defer></script>
     <script src="/.js/clock.js"></script>
+    <script src="/.js/markdown.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
 </head>
 <body class="themeDark">
     <main-navigation></main-navigation>
@@ -33,10 +36,41 @@
                     <p>•</p>
                     <p class="projectDuration" title="Duration">6m</p>
                 </div>
+
+                <div class="projectDescription">
+                    <p>A young man goes to the gym for the first time and feels like he is constantly being watched.</p>
+                </div>
+
+                <div class="projectPeople">
+                    <div class="peopleRow">
+                        <h4>Director</h4>
+                        <p>Xander Schrauwen</p>
+                    </div>
+                    <div class="peopleRow">
+                        <h4>Team</h4>
+                        <p>Thomas Wind • Abel Tulp • Sem Lagrand • Elsa de Swart</p>
+                    </div>
+                </div>
+
+                <div class="projectExternal">
+                    <a class="projectButton" href="https://www.imdb.com/title/tt44112797">
+                        <img src="/.assets/icons/socials/imdb.svg" alt="">
+                        <p title="IMDB">IMDb</p>
+                    </a>
+                    <a class="projectButton" href="https://www.themoviedb.org/movie/1749206-gym-anxiety">
+                        <img src="/.assets/icons/socials/tmdb.svg" alt="">
+                        <p title="The Movie Database">TMDB</p>
+                    </a>
+                    <a class="projectButton" href="https://www.youtube.com/watch?v=G457MF7_GYw">
+                        <img src="/.assets/icons/socials/youtube.svg" alt="">
+                        <p title="The Movie Database">YouTube</p>
+                    </a>
+                </div>
             </div>
         </section>
-        <section class="projectInformation">
 
+        <section class="projectCredits">
+            <div id="project-credits" data-md="/projects/md/gym-anxiety.md"></div>
         </section>
     </main>
 

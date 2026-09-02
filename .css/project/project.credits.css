@@ -1,0 +1,23 @@
+.projectCredits div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapL);
+    width: 100%;
+    font-family: 'Unageo';
+    font-weight: 400;
+    font-size: 1rem;
+    
+    color: var(--textColor);
+    text-align: left;
+}
+
+.projectCredits div table tbody tr {
+    display: flex;
+    width: 25vw;
+    gap: var(--gapL);
+}
+
+.projectCredits div table tbody td {
+    display: flex;
+    width: 25vw;
+}

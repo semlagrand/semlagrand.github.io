@@ -7,6 +7,7 @@
 @import url('/.css/footer/footer.main.css');
 
 @import url('/.css/project/project.header.css');
+@import url('/.css/project/project.credits.css');
 
 :root {
     --border: 1px solid;

@@ -4,19 +4,21 @@
     justify-content: center;
     gap: var(--gapL);
 
-    
+
     padding: var(--paddingL);
 }
 
 .projectPoster img {
     height: auto;
     width: 16vw;
+    border-radius: var(--innerBorderRadius);
 }
 
 .projectOverview {
     display: flex;
     flex-direction: column;
     color: var(--textColor);
+    gap: var(--gapS);
 }
 
 .projectInfo {
@@ -43,4 +45,56 @@
 
     color: var(--textColor);
     opacity: 0.5;
+}
+
+.projectPeople {
+    display: flex;
+    flex-direction: column;
+}
+
+.peopleRow {
+    display: flex;
+    align-items: center;
+    gap: var(--gapM);
+    border-top: 2px solid var(--borderColor);
+    padding: var(--paddingM);
+}
+
+.peopleRow h4 {
+    font-family: 'Unageo';
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.peopleRow p {
+    font-family: 'Unageo';
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.projectExternal {
+    display: flex;
+    gap: var(--gapS);
+}
+
+.projectButton {
+    display: flex;
+    background-color: var(--textColor);
+    align-items: center;
+    padding: var(--paddingSW);
+    color: #101010;
+    border-radius: var(--innerBorderRadius);
+    gap: var(--gapXS);
+}
+
+.projectButton p {
+    font-family: 'Unageo';
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.projectButton img {
+    width: 2rem;
+    height: auto;
+    padding: var(--paddingS);
 }
