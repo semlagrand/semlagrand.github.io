@@ -6,6 +6,8 @@
 
 @import url('/.css/footer/footer.main.css');
 
+@import url('/.css/project/project.header.css');
+
 :root {
     --border: 1px solid;
     --borderAccent: 1px solid var(--primaryColor);

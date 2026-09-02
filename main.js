@@ -11,7 +11,7 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('menu-toggle').onclick = (e) => {
-        const navigation = document.getElementById('navigation_side');
+        const navigation = document.getElementById('navigation-side');
         navigation.classList.toggle('open');
     };
 
