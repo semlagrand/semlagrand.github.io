@@ -1,0 +1,22 @@
+{
+  "MainNavigation": {
+    "scope": "html, javascript",
+    "prefix": [
+        "main-navigation"
+    ],
+    "body": [
+      "<main-navigation></main-navigation>"
+    ],
+    "description": "Insert <main-navigation> element"
+  },
+  "MainFooter": {
+    "scope": "html, javascript",
+    "prefix": [
+        "main-footer"
+    ],
+    "body": [
+      "<main-footer></main-footer>"
+    ],
+    "description": "Insert <main-footer> element"
+  }
+}

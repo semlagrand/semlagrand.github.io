@@ -1,0 +1,13 @@
+{
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.quickSuggestionsDelay": 50,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.suggestSelection": "first",
+}
