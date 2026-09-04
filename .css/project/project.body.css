@@ -13,7 +13,7 @@
     height: auto;
     border-radius: var(--innerBorderRadius);
     border: var(--border) var(--borderColor);
-    margin: var(--marginXL) 0;
+    margin: var(--marginL) 0;
 }
 
 .projectBody p {

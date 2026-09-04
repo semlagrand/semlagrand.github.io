@@ -2,10 +2,13 @@
     display: flex;
     flex-direction: column;
     gap: var(--gapL);
-    width: 100%;
+    width: var(--pageWidth);
     font-family: 'Unageo';
     font-weight: 400;
     font-size: 1rem;
+    align-items: center;
+
+    padding: var(--paddingL);
     
     color: var(--textColor);
     text-align: left;
