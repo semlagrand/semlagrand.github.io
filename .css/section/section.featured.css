@@ -1,0 +1,33 @@
+.featuredSection {
+    display: flex;
+    max-width: var(--pageWidth);
+    flex-direction: column;
+}
+
+.featuredBackdrop img {
+    width: 100%;
+    border-radius: var(--innerBorderRadius);
+}
+
+.featuredTitle {
+    color: var(--textColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gapS);
+}
+
+.featuredTitle h2 {
+    font-family: 'Unageo';
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.featuredTitle h3 {
+    font-family: 'Unageo';
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--textColor);
+    opacity: 0.25;
+}

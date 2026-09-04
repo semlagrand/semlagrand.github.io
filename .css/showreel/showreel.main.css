@@ -1,0 +1,8 @@
+.showreelContainer {
+    width: var(--pageWidth);
+}
+
+.showreelContainer video {
+    width: 100%;
+    border-radius: var(--innerBorderRadius);
+}

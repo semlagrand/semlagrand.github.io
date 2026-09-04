@@ -10,6 +10,10 @@
 @import url('/.css/project/project.credits.css');
 @import url('/.css/project/project.body.css');
 
+@import url('/.css/showreel/showreel.main.css');
+
+@import url('/.css/section/section.featured.css');
+
 :root {
     --border: 1px solid;
     --borderAccent: 1px solid var(--primaryColor);
