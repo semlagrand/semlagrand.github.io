@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeproductSlides();
     
     // Initialize markdown content
-    loadMarkdownContent();
+    loadCreditsContent();
     
     // Load product versions
     loadProductVersions();
@@ -164,7 +164,7 @@ async function getImagesFromFolder(folderPath) {
 }
 
 // Markdown loading functionality
-async function loadMarkdownContent() {
+async function loadCreditsContent() {
     const markdownElements = document.querySelectorAll('[data-markdown]');
     
     // Dynamically import the markdown parser module
