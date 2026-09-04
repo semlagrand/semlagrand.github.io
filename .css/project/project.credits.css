@@ -14,13 +14,18 @@
     text-align: left;
 }
 
+
+.projectCredits div table {
+    width: var(--pageWidth);
+}
+
 .projectCredits div table tbody tr {
     display: flex;
-    width: 25vw;
     gap: var(--gapL);
+    width: 100%;
 }
 
 .projectCredits div table tbody td {
     display: flex;
-    width: 25vw;
+    width: 100%;
 }

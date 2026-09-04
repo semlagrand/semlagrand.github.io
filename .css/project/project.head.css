@@ -10,13 +10,10 @@
     border-bottom: var(--border) var(--borderColor);
 }
 
-
 .projectPoster {
     display: flex;
     gap: var(--gapM);
 }
-
-
 
 .projectPoster img {
     height: 25vw;
@@ -110,4 +107,20 @@
     width: 2rem;
     height: auto;
     padding: var(--paddingS);
+}
+
+@media (max-width: 768px) {
+    .projectHead { display: grid; }
+
+    .projectPoster {
+        justify-content: center;
+    }
+
+    .projectPoster img {
+        height: auto;
+        width: 50vw;
+    }
+
+    .projectPoster img:first-child { border-radius: var(--innerBorderRadius); }
+    .projectPoster img:last-child { display: none; }
 }
