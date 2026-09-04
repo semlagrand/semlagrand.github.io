@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const setDefaultTheme = () => {
         if (!localStorage.getItem('theme')) {
-            localStorage.setItem('theme', 'themeLight');
-            bodyElement.classList.add('themeLight');
+            localStorage.setItem('theme', 'themeDark');
+            bodyElement.classList.add('themeDark');
         } else {
             bodyElement.classList.add(localStorage.getItem('theme'));
         }
