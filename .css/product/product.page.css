@@ -9,7 +9,7 @@
 }
 
 .productImages {
-    width: var(--mainElementWidth);
+    width: var(--pageWidth);
     height: auto;
     aspect-ratio: 16/9;
     overflow: hidden;
@@ -40,7 +40,7 @@
 
 .productSlides {
     position: relative;
-    width: var(--mainElementWidth);
+    width: var(--pageWidth);
     margin: 1rem auto;
     aspect-ratio: 16/9;
     overflow: hidden;
@@ -59,7 +59,7 @@
 .productBody {
     display: flex;
     justify-content: space-between;
-    width: var(--mainElementWidth);
+    width: var(--pageWidth);
     color: var(--textColor);
     margin-bottom: 16rem;
 }

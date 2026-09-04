@@ -1,0 +1,31 @@
+.projectBody {
+    max-width: var(--pageWidth);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gapL);
+    padding: var(--paddingL);
+    border-bottom: var(--border) var(--borderColor);
+}
+
+
+.projectImage {
+    display: flex;
+    color: var(--textColor);
+    max-width: 100%;
+    gap: var(--gapL);
+}
+
+.projectImage img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--innerBorderRadius);
+    border: var(--border) var(--borderColor);
+}
+
+.projectParagraph p {
+    font-family: 'Unageo';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--textColor);
+}

@@ -30,7 +30,7 @@ main.page {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: var(--gapMedium);
-    width: var(--mainElementWidth);
+    width: var(--pageWidth);
     padding: var(--paddingLarge);
 }
 

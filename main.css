@@ -6,8 +6,9 @@
 
 @import url('/.css/footer/footer.main.css');
 
-@import url('/.css/project/project.header.css');
+@import url('/.css/project/project.head.css');
 @import url('/.css/project/project.credits.css');
+@import url('/.css/project/project.body.css');
 
 :root {
     --border: 1px solid;
@@ -57,7 +58,7 @@
     --heroElementWidth: calc(100% - 32px);
     --heroBorderRadius: 8rem;
 
-    --mainElementWidth: 60vw;
+    --pageWidth: 60vw;
 }
 
 * { margin: 0; padding: 0;}
@@ -65,7 +66,7 @@
 
 @media (max-width: 768px) {
     :root {
-        --mainElementWidth: 90vw;
+        --pageWidth: 90vw;
     }
 }
 

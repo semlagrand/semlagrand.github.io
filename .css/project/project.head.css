@@ -1,17 +1,30 @@
-.projectHeader {
-    width: 100%;
+.projectHead {
+    max-width: var(--pageWidth);
     display: flex;
     justify-content: center;
     gap: var(--gapL);
 
 
     padding: var(--paddingL);
+
+    border-bottom: var(--border) var(--borderColor);
 }
 
+
+.projectPoster {
+    display: flex;
+    gap: var(--gapM);
+}
+
+
+
 .projectPoster img {
-    height: auto;
-    width: 16vw;
-    border-radius: var(--innerBorderRadius);
+    height: 25vw;
+    width: auto;
+}
+
+.projectPoster img:first-child {
+    border-radius: var(--innerBorderRadius) 0 0 var(--innerBorderRadius);
 }
 
 .projectOverview {
