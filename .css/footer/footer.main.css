@@ -55,6 +55,12 @@
     user-select: none;
 }
 
+.footerDetailMobile {
+    display: none;
+    height: fit-content;
+    user-select: none;
+}
+
 .footerClock {
     font-family: 'Unageo';
     font-size: 10rem;
@@ -82,5 +88,21 @@
 
     .verticalDivider {
         display: none;
+    }
+
+    .footerDetail {
+        display: none;
+    }
+
+    .footerClock {
+        text-align: center;
+        font-size: 8rem;
+        padding: 0 var(--paddingM);
+    }
+
+    .footerDetailMobile {
+        display: flex;
+        height: fit-content;
+        user-select: none;
     }
 }

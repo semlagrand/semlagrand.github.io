@@ -65,6 +65,9 @@ class MainFooter extends HTMLElement {
                 <div class="footerDetail">
                     <img src="/.assets/svg/footer-detail.svg" alt="">
                 </div>
+                <div class="footerDetailMobile">
+                    <img src="/.assets/svg/footer-detail-mobile.svg" alt="">
+                </div>
             </footer>
         `
     }
